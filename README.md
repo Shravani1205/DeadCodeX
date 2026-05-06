@@ -1,24 +1,11 @@
-# DeadCodeX - AI-Powered Code Analysis Platform
 # DeadCodeX 🚀
 
-An intelligent code error detection and rectification platform powered by AI. Upload your code, connect to cloud services, and get instant error analysis with AI-powered fixes.
 DeadCodeX is an AI-powered automated dead code detection, code quality analysis, and cleanup platform designed to improve maintainability, reduce technical debt, and optimize software projects.
 
-## Features
 ## 📌 Problem Statement
 
-### 🚀 Core Capabilities
-- **AI-Powered Error Detection**: Automatically detect errors, warnings, and code quality issues
-- **Intelligent Code Rectification**: AI-suggested fixes with detailed explanations
-- **Multi-Language Support**: JavaScript, TypeScript, Python, Java, Go, Rust, and more
-- **Real-Time Analysis**: Get instant feedback on your code
 Modern and legacy codebases often contain:
 
-### 📤 Multiple Upload Sources
-- **Manual Upload**: Drag and drop files or upload ZIP archives
-- **GitHub Integration**: Clone and analyze repositories (placeholder - OAuth setup required)
-- **Google Drive**: Import code from your Drive (placeholder - OAuth setup required)
-- **AWS S3**: Connect to S3 buckets (placeholder - credentials required)
 - Unused variables, imports, functions, and classes
 - Duplicate logic
 - Dead or unreachable code
@@ -26,54 +13,22 @@ Modern and legacy codebases often contain:
 - Increasing build times
 - Difficult maintenance
 
-### 🛠️ Analysis Features
-- Error and warning detection
-- Code quality suggestions
-- Best practice recommendations
-- Language-specific analysis
-- File-by-file breakdown
-
-### 💾 Data Management
-- Automatic backups before modifications
-- Export cleaned code
-- Backup history
-- Settings management
 These issues slow down development and increase technical debt.
-## 💡 Solution
 
-### Installation
-DeadCodeX intelligently scans source code repositories, uploaded projects, or ZIP files using static analysis + AI-assisted detection to identify unnecessary code, quality issues, and optimization opportunities.
-
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd deadcodex
-```
-It then provides confidence-based cleanup recommendations.
-
-2. Install dependencies:
-```bash
-bun install
-```
 ---
 
-3. Set up environment variables:
-```bash
-cp .env.example .env
-```
+## 💡 Solution
+
+DeadCodeX intelligently scans source code repositories, uploaded projects, or ZIP files using static analysis + AI-assisted detection to identify unnecessary code, quality issues, and optimization opportunities.
+
+It then provides confidence-based cleanup recommendations.
+
+---
+
 ## ✨ Features
 
-Edit `.env` with your configuration:
-```env
-DATABASE_URL="file:./db/custom.db"
-SESSION_SECRET="your-secret-key-here"
-```
 ### 🚀 Core Features
 
-4. Initialize the database:
-```bash
-bun run db:push
-```
 - 🔍 Detect dead code automatically
 - 🤖 AI-powered code analysis
 - 🧹 Cleanup recommendations
@@ -83,10 +38,6 @@ bun run db:push
 - 📂 Repository scanning support
 - 🔐 Secure uploads
 
-5. Start the development server:
-```bash
-bun run dev
-```
 ### 📤 Upload Sources
 
 - Manual file upload
@@ -94,10 +45,8 @@ bun run dev
 - GitHub repository integration
 - Cloud source support (future)
 
-The application will be available at `http://localhost:3000`
 ### 🛠️ Analysis Features
 
-## Usage
 - Unused imports
 - Unused variables
 - Unused functions/classes
@@ -106,67 +55,20 @@ The application will be available at `http://localhost:3000`
 - File-wise report generation
 - Suggestions with severity levels
 
-### 1. Sign Up
-- Visit the homepage
-- Click "Get Started"
-- Sign up with email/password or OAuth (Google/GitHub)
 ---
 
-### 2. Upload Code
-- Go to the Upload page
-- Choose your upload source:
-  - **Files**: Drag and drop or browse for files
-  - **GitHub**: Enter repository URL
-  - **Drive**: Provide Google Drive URL
-  - **AWS**: Enter bucket and key details
-- Click "Start Analysis"
 ## 🛠 Tech Stack
 
-### 3. Review Analysis
-- View detected errors and warnings
-- Read AI suggestions
-- Preview original and rectified code
-- Download individual files
 ### Frontend
 
-### 4. Clean Up Code
-- Select files to clean
-- Click "AI Rectify" for automatic fixes
-- Review the changes
-- Download cleaned files
 - HTML5
 - Tailwind CSS
 - JavaScript
 
-### 5. Manage Settings
-- Configure preferences
-- Set backup frequency
-- Choose default language
-- Manage notifications
 ### Backend
 
-## Project Structure
 - Python Flask / Node.js
 
-```
-deadcodex/
-├── prisma/
-│   └── schema.prisma          # Database schema
-├── src/
-│   ├── app/
-│   │   ├── analysis/[id]/    # Analysis result page
-│   │   ├── cleanup/[id]/     # Code cleanup page
-│   │   ├── dashboard/        # User dashboard
-│   │   ├── login/            # Login page
-│   │   ├── register/         # Registration page
-│   │   ├── settings/         # Settings page
-│   │   ├── upload/           # Upload page
-│   │   └── api/              # API routes
-│   ├── components/           # React components
-│   ├── hooks/               # Custom hooks
-│   └── lib/                 # Utilities and helpers
-└── package.json
-```
 ### Database
 
 - SQLite / PostgreSQL
@@ -295,4 +197,6 @@ MIT License - see LICENSE file for details.
 ## Support
 
 For issues and questions, please open an issue on GitHub.
+=======
 # DeadCodeX
+>>>>>>> 0dfb62c78b8a30993a5c42a1042bd911e4da8ed5
